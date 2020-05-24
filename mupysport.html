@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="Js/mupy.js"></script>
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lobster+Two:wght@700&family=Pacifico&display=swap');
+    </style>
+</head>
+<body>
+    <section>
+       <!--This is section 1 of the page-->
+       <div class="section1">
+        <img src="Images/logo.jpg" class="logo" height="80" width="80"/>
+           <div class="navigation">
+            <img src="Images/menu.png" class="toggle"height="60" width="70"/>
+            <a class="cgr">Categories</a>
+        </div>
+    <div>
+        <a class="submenu">Ajax</a>
+        <a class="submenu">Arsenal</a>
+        <a class="submenu">AS Roma</a>
+        <a class="submenu">Atletico Madrid</a>
+        <a class="submenu">Chelsea</a>
+        <a class="submenu">Dortmund</a>
+        <a class="submenu">Everton</a>
+        <a class="submenu">Inter Milan</a>
+        <a class="submenu">Leicester City</a>
+        <a class="submenu">Liverpool</a>
+        <a class="submenu">Manchester United</a>
+        <a class="submenu">PSG</a>
+        <a class="submenu">Barcelona</a>
+        <a class="submenu">Nigeria</a>
+    </div>
+
+   
+    
+       <!-- This is section 2 of the page-->
+       <div class="section2">
+        <input type="text" placeholder="search" class="txtsrch"/><button type="button" class="btnsrch"> search</button>
+        <div align="right"><img src="images/phone.png" width="30" height=20" alt="Computer Hope">
+            <span class="tel-no"> <b>08169127046</span>
+            </div>
+
+
+            <nav>
+               <a class="menuitem">Home</a>
+               <a class="menuitem">Wish list(0)</a>
+               <a class="menuitem">My Account</a>
+               <a class="menuitem">Shopping Cart</a>
+               <a class="menuitem">Checkout</a>
+               <a class="menuitem">Item(s)</a>
+            </nav>
+
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide1">
+                        <img src="Images/Ajax Away19_20.jpg" class="img1"/>
+                    </div>
+                    <div class="slide1">
+                        <img src="Images/Arsenal Away19_20.jpg" class="img2"/>
+                    </div>
+                    <div class="slide1">
+                        <img src="Images/Arsenal Home19_20.jpg" class="img3"/>
+                    </div>
+                    <div class="constant">
+                        <h1>MupySports Collection</h1>
+                        <p>Quality is guaranteed</p>
+                        <a class="btnshopnow">Shop Now!</a>
+                    </div>
+                </section>
+
+                <script>
+
+                    var $slides=$('.slides');
+                    var $slide=$('.slide1');
+                    var count=1;
+
+                    $(document).ready(function() {
+                        setInterval(function() {
+                        
+
+                    $slides.animate({'margin-left':'-=68vw'}, 1200, function (){
+
+                        count++;
+                        if(count === 4) {
+                            $slides.css("margin-left", 0);
+                            count = 1;
+                        }
+
+                    });
+                }, 4000);
+            });
+
+        </script>
+      <h3><a href="https://codepen.io/collection/DapBxW" target="_blank">More CSS Grid layouts</a></h3>
+      <ul id="productGrid">
+        <li class="product">
+          <div class="details">
+            <h2>NMD_R1</h2>
+            <p class="price">£109.95</p>
+          </div>
+          <div class="logo">
+            <img src='images/AS Roma Away19_20.jpg' alt=''/>
+          </div>
+          <h3><a href="https://codepen.io/collection/DapBxW" target="_blank">More CSS Grid layouts</a></h3>
+      <ul id="productGrid">
+        <li class="product">
+          <div class="details">
+            <h2>NMD_R1</h2>
+            <p class="price">£109.95</p>
+          </div>
+          <h3><a href="https://codepen.io/collection/DapBxW" target="_blank">More CSS Grid layouts</a></h3>
+          <ul id="productGrid">
+            <li class="product">
+              <div class="details">
+                <h2>NMD_R1</h2>
+                <p class="price">£109.95</p>
+              </div>
+              <div class="logo">
+                <img src='images/Atletico Madrid Away19_20.jpg' alt=''/>
+              </div>
+                        
+</body>
+</html>
